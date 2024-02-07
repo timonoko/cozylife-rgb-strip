@@ -2,6 +2,7 @@
 import custom_components.cozylife.tcp_client as tcp_client
 import time
 import colorsys
+import sys
 
 a=tcp_client.tcp_client('192.168.1.154')
 
@@ -37,6 +38,13 @@ def testi():
         time.sleep(1)
         hexa('ffffff')
         time.sleep(1)
-        
-testi()
+
+def sumua(): hexa('ffa040')
+def hamara(): hexa('402038')
+
+
+
+eval(sys.argv[1]+"()")
+
+
 
